@@ -1,16 +1,17 @@
 {
   "name": "redux-persist-crosstab",
-  "version": "3.7.0",
+  "version": "3.8.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "build": "babel src -d lib",
     "test": "exit 0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rt2zz/redux-persist-crosstab.git"
+    "url": "git+https://github.com/entelo/redux-persist-crosstab.git"
   },
-  "homepage": "https://github.com/rt2zz/redux-persist-crosstab",
+  "homepage": "https://github.com/entelo/redux-persist-crosstab",
   "keywords": [
     "redux",
     "localstorage",
@@ -19,8 +20,13 @@
     "redux-rehydrate"
   ],
   "peerDependencies": {
-    "redux-persist": ">=3.5.0"
+    "redux-persist": ">=5"
   },
   "author": "rt2zz <zack@root-two.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1"
+  }
 }
